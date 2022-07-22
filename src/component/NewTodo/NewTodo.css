@@ -1,0 +1,16 @@
+.new-todo-input {
+ position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.new-todo-input input {
+  padding: 15px 9.5rem;
+  /* width: 120% */
+  text-align: justify;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #0f1416;
+  color: #fff;
+}

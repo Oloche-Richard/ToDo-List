@@ -1,0 +1,27 @@
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-betweeen;
+  gap: 55px;
+  text-align: center;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.active-left {
+   color: #fff6;
+   margin-left: 15px;
+
+}
+
+.active-right {
+  color: #fff6;
+  /* margin-right: 15px; */
+}
+.active-center {
+  color: #fff6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px
+}
