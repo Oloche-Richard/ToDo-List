@@ -1,10 +1,17 @@
 .list-section {
-  background-color: #0f1416;
+  /* background-color: #0f1426; */
+  background-color: #000333;
   width: 33.5%;
-  height: 55%;
+  height: 58%;
   position: absolute;
   top: 30%;
   left: 35%;
   list-style: none;
 }
-.list-sec
+.list-section ul {
+  margin-left: 20px;
+}
+
+.list-section ul li {
+  list-style: none;
+}
