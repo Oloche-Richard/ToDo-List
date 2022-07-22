@@ -1,17 +1,23 @@
 .list-section {
   /* background-color: #0f1426; */
   background-color: #000333;
-  width: 33.5%;
-  height: 58%;
+  width: 33%;
+  height: 50%;
   position: absolute;
   top: 30%;
   left: 35%;
   list-style: none;
+  text-align: center;
 }
 .list-section ul {
   margin-left: 20px;
 }
 
 .list-section ul li {
+  display: inlne-block;
   list-style: none;
+  border-bottom: 1px solid #000;
+  width: 100%; 
+  margin-bottom: 5px;
+
 }

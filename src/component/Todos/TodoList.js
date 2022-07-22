@@ -27,6 +27,11 @@ const TodoList = (props) => {
     //title={props.todos[3].title}
     />
     </li>
+    <li> 
+    <Todo 
+    //title={props.todos[3].title}
+    />
+    </li>
     </ul>
     <Active/>
     </Card>
