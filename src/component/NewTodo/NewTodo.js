@@ -1,19 +1,30 @@
-import "./NewTodo.css"
-// import {useState} from "react"
+import "./NewTodo.css";
+ import {useState} from "react";
  
  
- const NewTodo = () => {
-  //  const [enteredTodo, setEnteredTodo] = useState('')
+ const NewTodo = (props) => {
+   const [enteredTodo, setEnteredTodo] = useState('')
     const todoHandler = (event) => {
-      console.log(event.target.value)
+      setEnteredTodo(event.target.value)
     } 
+    const submitHandler = (event) => {
+      event.preventDefault();
+
+     const todoData = {title: enteredTodo};
+
+     props.onSaveTodoData();
+     setEnteredTodo('')
+    }
    return (
-     <div className='new-todo-input'>
-     <input type='text'
+     <form className='new-todo-input' onSubmit={submitHandler}>
+     <input 
+      type='text'
+      value={enteredTodo}
       placeholder='create a new todo'
       onChange={todoHandler}
      />
-     </div>
+     <button> Add </button>
+     </form>
    )
  }
 
