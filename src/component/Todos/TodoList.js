@@ -8,28 +8,32 @@ const TodoList = (props) => {
     <ul>
     <li>  
       <Todo
-   //  key={props.todos.id}
-   //  title={props.todos[0].title}
+    key={props.todos.id}
+    title={props.todos[0].title}
      />
     </li>
     <li>
     <Todo 
-   // title={props.todos[1].title}
+    key={props.todos.id}
+   title={props.todos[1].title}
     />
     </li>
     <li>  
     <Todo 
-   // title={props.todos[2].title}
+    key={props.todos.id}
+   title={props.todos[2].title}
     />
     </li>
     <li> 
     <Todo 
-    //title={props.todos[3].title}
+    key={props.todos.id}
+    title={props.todos[3].title}
     />
     </li>
     <li> 
     <Todo 
-    //title={props.todos[3].title}
+    key={props.todos.id}
+    title={props.todos[4].title}
     />
     </li>
     </ul>

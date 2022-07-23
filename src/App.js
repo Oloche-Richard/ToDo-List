@@ -19,15 +19,17 @@ import TodoList from "./component/Todos/TodoList"
    {
      id: 'e4',
      title:'Develop a site',
+   },
+      {
+     id: 'e5',
+     title:'Learn how to dance',
    }
  ]
 
   return (
     <div className= 'app'>
     <Header/>
-  <TodoList 
-    //todos={todos}
-    />
+    <TodoList todos={todos}/>
     </div>
   )
 }
