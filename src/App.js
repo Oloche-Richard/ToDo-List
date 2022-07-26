@@ -1,9 +1,9 @@
 import "./styles.css";
 import Header from "./component/Header/Header"
 import TodoList from "./component/Todos/TodoList"
- 
- export default function App() {
- const todos = [
+import {useState} from "react"
+
+ const Dummy_todos = [
    {
    id: 'e1',
    title: 'Buy a Book',
@@ -26,14 +26,19 @@ import TodoList from "./component/Todos/TodoList"
    }
  ]
 
- const addTodoHandler = event => {
-   console.log('in app js');
-   console.log(todos);
+ export default function App() {
+const [todos ,setTodo] = useState(Dummy_todos);
+
+
+ const addTodoHandler = todo => {
+   setTodo((prevTodos) => {
+     return [todo, ...prevTodos]
+   })
  }
 
   return (
     <div className= 'app'>
-    <Header onAddExpense/>
+    <Header onAddTodo={addTodoHandler}/>
     <TodoList todos={todos}/>
     </div>
   )

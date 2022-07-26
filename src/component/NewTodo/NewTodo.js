@@ -4,6 +4,7 @@ import "./NewTodo.css";
  
  const NewTodo = (props) => {
    const [enteredTodo, setEnteredTodo] = useState('')
+    
     const todoHandler = (event) => {
       setEnteredTodo(event.target.value)
     } 

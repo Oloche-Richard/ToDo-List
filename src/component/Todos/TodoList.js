@@ -5,7 +5,8 @@ import Active from "./Active"
 const TodoList = (props) => {
   return (
     <Card className='list-section'>
-    <ul>
+    {props.todos.map(todo => <Todo title={todo.title}/>)}
+    {/* <ul>
     <li>  
       <Todo
     key={props.todos.id}
@@ -36,7 +37,7 @@ const TodoList = (props) => {
     title={props.todos[4].title}
     />
     </li>
-    </ul>
+    </ul> */}
     <Active/>
     </Card>
   )

@@ -17,7 +17,7 @@ import NewTodo from "./../NewTodo/NewTodo"
         ...enteredTodoData,
         id: Math.random().toString()
       }
-      console.log(todoData)
+      props.onAddTodo(todoData)
     }
 
    return (
