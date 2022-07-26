@@ -26,9 +26,14 @@ import TodoList from "./component/Todos/TodoList"
    }
  ]
 
+ const addTodoHandler = event => {
+   console.log('in app js');
+   console.log(todos);
+ }
+
   return (
     <div className= 'app'>
-    <Header/>
+    <Header onAddExpense/>
     <TodoList todos={todos}/>
     </div>
   )

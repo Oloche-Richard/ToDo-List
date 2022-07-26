@@ -10,9 +10,9 @@ import "./NewTodo.css";
     const submitHandler = (event) => {
       event.preventDefault();
 
-     const todoData = {title: enteredTodo};
+     const todoData =  enteredTodo;
 
-     props.onSaveTodoData();
+     props.onSaveTodoData(todoData);
      setEnteredTodo('')
     }
    return (
