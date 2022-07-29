@@ -11,7 +11,7 @@ import "./NewTodo.css";
     const submitHandler = (event) => {
       event.preventDefault();
 
-     const todoData =  enteredTodo;
+     const todoData =  {title:enteredTodo};
 
      props.onSaveTodoData(todoData);
      setEnteredTodo('')
