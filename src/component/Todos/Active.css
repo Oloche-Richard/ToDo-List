@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-betweeen;
   gap: 55px;
+  position: fixed;
+  top: 73%;
+  left: 35%;
   text-align: center;
   margin-top: 15px;
   white-space: nowrap;
