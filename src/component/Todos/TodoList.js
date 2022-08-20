@@ -2,6 +2,8 @@ import "./TodoList.css"
 import Todo from "./Todo.js"
 import Card from "./../Ui/Card"
 import Active from "./Active"
+
+
 const TodoList = (props) => {
   return (
     <Card className='list-section'>
@@ -38,7 +40,7 @@ const TodoList = (props) => {
     />
     </li>
     </ul> */}
-    <Active/>
+    {/* <Active/> */}
     </Card>
   )
 }
