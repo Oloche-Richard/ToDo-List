@@ -4,10 +4,11 @@ import Card from "./../Ui/Card"
 import Active from "./Active"
 
 
+
 const TodoList = (props) => {
   return (
     <Card className='list-section'>
-    {props.todos.map(todo => <Todo title={todo.title}/>)}
+    {props.todos.map(todo =>  <Todo  key={todo.id} title={todo.title} />)}
     {/* <ul>
     <li>  
       <Todo
