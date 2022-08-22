@@ -1,5 +1,10 @@
 .todo {
   padding: 20px 10px;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+.todo:last-child{
+  border-bottom: none;
 }
 .todo-item {
   display: flex;
