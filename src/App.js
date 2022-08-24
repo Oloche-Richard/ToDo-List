@@ -27,7 +27,24 @@ import {useState} from "react"
  ]
 
  export default function App() {
+     const [updateTodo, setUpdateTodo] = useState(Dummy_todos)
 const [todos ,setTodo] = useState(Dummy_todos);
+
+const deleteTodo = index =>  {
+  setUpdateTodo((items) => updateTodo.filter((_, i) => i !== index))
+  return (
+    <>
+    {updateTodo.map((it, index) => {
+      return (
+        <div key={it.id}> {it.title} 
+        <button onClick={deleteTodo(index)}></button>
+        </div>
+      )
+    })}
+  );
+  </>
+
+  )}
 
 
  const addTodoHandler = todo => {
@@ -39,7 +56,9 @@ const [todos ,setTodo] = useState(Dummy_todos);
   return (
     <div className= 'app'>
     <Header onAddTodo={addTodoHandler}/>
-    <TodoList todos={todos}/>
+    <TodoList
+     todos={todos}
+    deleteHandler={deleteTodo}/>
     </div>
   )
 }

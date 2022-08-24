@@ -1,47 +1,14 @@
 import "./TodoList.css"
 import Todo from "./Todo.js"
 import Card from "./../Ui/Card"
-import Active from "./Active"
+
 
 
 
 const TodoList = (props) => {
   return (
     <Card className='list-section'>
-    {props.todos.map(todo =>  <Todo  key={todo.id} title={todo.title} />)}
-    {/* <ul>
-    <li>  
-      <Todo
-    key={props.todos.id}
-    title={props.todos[0].title}
-     />
-    </li>
-    <li>
-    <Todo 
-    key={props.todos.id}
-   title={props.todos[1].title}
-    />
-    </li>
-    <li>  
-    <Todo 
-    key={props.todos.id}
-   title={props.todos[2].title}
-    />
-    </li>
-    <li> 
-    <Todo 
-    key={props.todos.id}
-    title={props.todos[3].title}
-    />
-    </li>
-    <li> 
-    <Todo 
-    key={props.todos.id}
-    title={props.todos[4].title}
-    />
-    </li>
-    </ul> */}
-    {/* <Active/> */}
+    {props.todos.map(todo =>  <Todo  key={todo.id} title={todo.title}/>)}
     </Card>
   )
 }
